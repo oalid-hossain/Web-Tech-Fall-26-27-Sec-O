@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+  </head>
+  <body>
+    <form>
+        <h1>Student Registration</h1><br>
+      <label for="fullname">Full Name:</label>
+      <input
+        type="text"
+        name="fullname"
+        id="fullname"
+        placeholder="Write your name here"
+        required
+      />    <br>
+      <br>
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Write your email here"
+        required
+      />
+      <br><br>
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Write your password here"
+        required
+      />
+      <br><br>
+
+      <label for="age">Full Name:</label>
+      <input type="age" name="age" id="age" placeholder="Your age" /> 
+      <br><br>
+
+      <label for="dob">Full Name:</label>
+      <input type="date" name="dob" id="dob" />
+      <br><br>
+
+      <label>Gender:</label>
+      <input type="radio" value="Male" />Male
+      <input type="radio" value="Female" />Female 
+      <input type="radio" value="others" />Others 
+      <br><br>
+
+      <label>City:</label><br />
+      <select name="city">
+        <option value="dhaka">Dhaka</option>
+        <option value="khulna">Khulna</option>
+        <option value="rajshahi">Rajshahi</option>
+        <option value="sylhet">Sylhet</option>
+      </select>
+      <br />
+      <p>Hobbies:</p>
+      <input type="checkbox" name="hobby" value="reading" /> Reading
+      <input type="checkbox" name="hobby" value="cricket" /> Cricket
+      <input type="checkbox" name="hobby" value="music" /> Music <br /><br />
+      <label>About Yourself:</label><br />
+      <textarea name="about" rows="4" cols="40"></textarea>
+      <br /><br />
+      <input type="submit" value="Register" />
+      <input type="reset" value="Clear" />
+    </form>
+  </body>
+</html>
