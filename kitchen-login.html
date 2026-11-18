@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieRest | Kitchen Staff Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="kitchen-login.css">
+</head>
+<body>
+
+    <div class="auth-page">
+
+        <!--  Bam pash: welcome panel  -->
+        <section class="auth-left">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="FoodieRest logo">
+                <strong>Foodie<span>Rest</span></strong>
+            </a>
+            <h1>Welcome Back!</h1>
+            <p>Login to continue</p>
+            <ul class="feature-list">
+                <li><span class="icon">🥗</span> Fresh Ingredients</li>
+                <li><span class="icon">⚡</span> Fast Service</li>
+                <li><span class="icon">😋</span> Great Taste</li>
+            </ul>
+        </section>
+
+        <!--  Dan pash: form  -->
+        <section class="auth-right">
+            <div class="auth-card">
+                <span class="role-pill">Kitchen Staff</span>
+                <h2>Kitchen Staff Login</h2>
+                <p class="sub">Login to see and prepare orders</p>
+
+                <form onsubmit="return validateLogin('kitchen')" novalidate>
+                    <p id="formMessage" class="form-message"></p>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="remember-row">
+                        <label class="check-label" for="remember">
+                            <input type="checkbox" id="remember" name="remember" value="yes"> Remember me
+                        </label>
+                        <a href="forgot-password.html">Forgot password?</a>
+                    </div>
+
+                    <input type="submit" value="Login" class="btn btn-primary btn-block">
+                </form>
+
+                <p class="auth-switch">
+                    Don't have an account? <a href="kitchen-register.html">Register here</a>
+                </p>
+                <p class="demo-hint">Demo account: kitchen@foodierest.com / kitchen123</p>
+
+                <p class="auth-switch">
+                    <a href="role.html">Change role</a>
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="kitchen-login.js"></script>
+    <script>
+        fillRememberedEmail();
+    </script>
+
+</body>
+</html>

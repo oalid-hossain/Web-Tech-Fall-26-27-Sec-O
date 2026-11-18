@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <rect width="300" height="200" fill="#FFF7D1"/>
+  <ellipse cx="150" cy="178" rx="70" ry="9" fill="#000" opacity="0.08"/>
+  <g fill="#F9C531" stroke="#E5A916" stroke-width="2">
+    <rect x="108" y="40" width="14" height="80" rx="3" transform="rotate(-12 115 80)"/>
+    <rect x="126" y="28" width="14" height="90" rx="3" transform="rotate(-5 133 73)"/>
+    <rect x="144" y="22" width="14" height="96" rx="3"/>
+    <rect x="162" y="30" width="14" height="88" rx="3" transform="rotate(6 169 74)"/>
+    <rect x="180" y="42" width="14" height="78" rx="3" transform="rotate(13 187 81)"/>
+    <rect x="135" y="44" width="14" height="76" rx="3" transform="rotate(8 142 82)"/>
+    <rect x="154" y="46" width="14" height="74" rx="3" transform="rotate(-9 161 83)"/>
+  </g>
+  <path d="M96 92 H204 L190 176 H110 Z" fill="#E53935"/>
+  <path d="M96 92 Q150 118 204 92" fill="#C62828"/>
+  <circle cx="150" cy="140" r="16" fill="#FFF"/>
+  <text x="150" y="146" font-family="Arial" font-size="16" font-weight="bold" fill="#E53935" text-anchor="middle">F</text>
+</svg>

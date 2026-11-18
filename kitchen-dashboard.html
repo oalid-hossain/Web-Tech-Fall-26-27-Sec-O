@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieRest Kitchen | Today's Orders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kitchen-dashboard.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="kitchen-dashboard.html" class="logo">
+                <img src="images/logo.svg" alt="FoodieRest logo">
+                <strong>Foodie<span>Rest</span></strong>
+            </a>
+            <nav class="nav-links">
+                <a href="kitchen-dashboard.html" class="active">Orders</a>
+                <span class="user-box">
+                    <span class="avatar" id="avatarLetter">K</span> <span id="userName">Hello</span>
+                </span>
+                <a href="#" onclick="logout(); return false;">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Today's Orders</h1>
+        <p class="page-subtitle">Kitchen staff update the status from Pending to Preparing, then to Ready.</p>
+
+        <!-- order count -->
+        <section class="kitchen-summary">
+            <div class="k-box k-pending">
+                <strong id="pendingCount">0</strong>
+                <span>Pending</span>
+            </div>
+            <div class="k-box k-preparing">
+                <strong id="preparingCount">0</strong>
+                <span>Preparing</span>
+            </div>
+            <div class="k-box k-ready">
+                <strong id="readyCount">0</strong>
+                <span>Ready for delivery</span>
+            </div>
+        </section>
+
+        <!-- order table -->
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Items &amp; Quantity</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="kitchenRows"></tbody>
+            </table>
+        </div>
+
+        <p class="kitchen-note">Delivered orders are removed from this list. The admin marks an order Delivered after it is Ready.</p>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 FoodieRest Restaurant Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="storage.js"></script>
+    <script src="kitchen-dashboard.js"></script>
+    <script>
+        loadKitchenPage();
+    </script>
+
+</body>
+</html>
