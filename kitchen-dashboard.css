@@ -1,5 +1,5 @@
 :root {
-    --primary: #F4511E;
+    --primary: #d75937;
     --primary-dark: #D84315;
     --primary-light: #FFF1EB;
     --dark: #1E293B;
@@ -62,8 +62,6 @@ ul {
     align-items: center;
     gap: 8px;
     font-size: 22px;
-    font-weight: 700;
-    color: var(--dark);
 }
 
 .logo img {
@@ -80,7 +78,7 @@ ul {
     top: 0;
     z-index: 10;
     background-color: var(--white);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 6px rgba(213, 10, 10, 0.08);
 }
 
 .navbar .container {
